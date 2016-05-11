@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LayerShape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgd-Zk-GlF">
+                                <rect key="frame" x="160" y="50" width="280" height="280"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="BC6-vj-P9e"/>
+                                    <constraint firstAttribute="width" constant="280" id="dXF-O8-glg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llr-kk-KfZ">
+                                <rect key="frame" x="20" y="358" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Sb7-7G-NGP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSu-dt-T2G">
+                                <rect key="frame" x="20" y="399" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wFb-Aj-Cd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-7w-7zj">
+                                <rect key="frame" x="20" y="440" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2CO-gl-Xdl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="z :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvG-eo-T8x">
+                                <rect key="frame" x="20" y="481" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mpr-ja-B2U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-NC-pzv">
+                                <rect key="frame" x="276" y="547" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="0wp-id-A5n"/>
+                                    <constraint firstAttribute="width" constant="49" id="F5p-Nt-T1K"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchRotationType:" destination="BYZ-38-t0r" eventType="valueChanged" id="IUk-51-UgW"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gyro orientation: Horizontal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhE-HV-qar">
+                                <rect key="frame" x="20" y="510" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="evn-ff-YVw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rSu-dt-T2G" firstAttribute="top" secondItem="llr-kk-KfZ" secondAttribute="bottom" constant="20" id="0Sd-NI-k5h"/>
+                            <constraint firstAttribute="trailing" secondItem="rSu-dt-T2G" secondAttribute="trailing" constant="20" id="1Ep-ck-8Xa"/>
+                            <constraint firstItem="FT5-NC-pzv" firstAttribute="top" secondItem="jhE-HV-qar" secondAttribute="bottom" constant="16" id="9ub-hK-dQ3"/>
+                            <constraint firstItem="llr-kk-KfZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="A5j-o9-7Ov"/>
+                            <constraint firstItem="llr-kk-KfZ" firstAttribute="top" secondItem="Xgd-Zk-GlF" secondAttribute="bottom" constant="28" id="DWB-DI-YZq"/>
+                            <constraint firstItem="jhE-HV-qar" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="F3l-Ua-B9Y"/>
+                            <constraint firstItem="N8e-7w-7zj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QU7-80-vHL"/>
+                            <constraint firstItem="EvG-eo-T8x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RYD-A6-obX"/>
+                            <constraint firstItem="FT5-NC-pzv" firstAttribute="centerX" secondItem="jhE-HV-qar" secondAttribute="centerX" id="Rkz-pY-frr"/>
+                            <constraint firstItem="jhE-HV-qar" firstAttribute="top" secondItem="EvG-eo-T8x" secondAttribute="bottom" constant="8" id="VbL-nv-aw7"/>
+                            <constraint firstItem="rSu-dt-T2G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="XLz-04-ETb"/>
+                            <constraint firstAttribute="trailing" secondItem="N8e-7w-7zj" secondAttribute="trailing" constant="20" id="epe-FA-jua"/>
+                            <constraint firstItem="N8e-7w-7zj" firstAttribute="top" secondItem="rSu-dt-T2G" secondAttribute="bottom" constant="20" id="ha3-w6-Dug"/>
+                            <constraint firstAttribute="trailing" secondItem="EvG-eo-T8x" secondAttribute="trailing" constant="20" id="hdy-UL-7hZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jhE-HV-qar" secondAttribute="trailing" id="rZh-Bd-NFh"/>
+                            <constraint firstItem="Xgd-Zk-GlF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-110" id="ueU-Ro-ObR"/>
+                            <constraint firstItem="EvG-eo-T8x" firstAttribute="top" secondItem="N8e-7w-7zj" secondAttribute="bottom" constant="20" id="vpm-m9-roa"/>
+                            <constraint firstAttribute="trailing" secondItem="llr-kk-KfZ" secondAttribute="trailing" constant="20" id="x3X-TV-C12"/>
+                            <constraint firstItem="Xgd-Zk-GlF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIy-22-ii3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lb_rotation_type" destination="jhE-HV-qar" id="xbu-xa-A5M"/>
+                        <outlet property="lb_title" destination="llr-kk-KfZ" id="igZ-X4-fB8"/>
+                        <outlet property="lb_x" destination="rSu-dt-T2G" id="pfI-US-LKr"/>
+                        <outlet property="lb_y" destination="N8e-7w-7zj" id="mmq-o8-V1m"/>
+                        <outlet property="lb_z" destination="EvG-eo-T8x" id="7P7-42-RwW"/>
+                        <outlet property="viewForTransformLayer" destination="Xgd-Zk-GlF" id="EPU-Mh-n9u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="450"/>
+        </scene>
+    </scenes>
+</document>
